@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('img/fondo de pantalla.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Mantiene la imagen fija mientras se hace scroll */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilo del título */
+h1 {
+    font-size: 2.5em;
+    margin: 20px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffeaa7;
+}
+
+/* Caja "Antes" */
+.before-box {
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 20px;
+    margin: 20px 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    max-width: 1000px;
+    width: 90%;
+    margin: 20px 0; /* Separación entre contenedores */
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que los contenedores se ajusten en pantallas pequeñas */
+}
+
+/* Texto */
+.text-box {
+    font-size: 1.2em;
+    background: rgba(255, 255, 255, 0.8);
+    color: #2d3436;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    flex-grow: 1;
+    max-width: 60%;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* Carrusel */
+.carousel {
+    position: relative;
+    width: 35%; /* Ajusta el tamaño relativo al contenedor */
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    margin-left: auto; /* Alinea a la derecha */
+}
+
+/* Contenedor de las imágenes del carrusel */
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+/* Estilo para las imágenes dentro del carrusel */
+.carousel img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/* Estilo de los controles del carrusel */
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+/* Estilo de los botones del carrusel */
+button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: background-color 0.3s;
+}
+
+/* Efecto hover para los botones */
+button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
